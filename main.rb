@@ -22,8 +22,11 @@ def list_items(inventory)
 end
 
 def view_item_details(inventory, index)
-  puts inventory[index - 1].name
-  puts inventory[index - 1].id
-  puts inventory[index - 1].price
-  puts inventory[index - 1].amount
+
+  index -= 1
+
+  puts inventory[index].name
+  puts inventory[index].id
+  puts inventory[index].price
+  puts inventory[index].amount
 end
