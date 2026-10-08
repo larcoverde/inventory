@@ -39,3 +39,9 @@ def edit_item(inventory, index, new_name, new_id, new_price, new_amount)
   inventory[index].name = new_price unless new_price.empty?
   inventory[index].name = new_amount unless new_amount.empty?
 end
+
+def delete_item(inventory, index)
+  index -= 1
+
+  inventory.delete_at(index)
+end
