@@ -14,3 +14,9 @@ inventory = []
 def create_item(inventory, name, id, price, amount)
   inventory << Item.new(name, id, price, amount)
 end
+
+def list_items(inventory)
+  inventory.each do |item|
+    puts item.name
+  end
+end
