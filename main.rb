@@ -30,3 +30,12 @@ def view_item_details(inventory, index)
   puts inventory[index].price
   puts inventory[index].amount
 end
+
+def edit_item(inventory, index, new_name, new_id, new_price, new_amount)
+  index -= 1
+
+  inventory[index].name = new_name unless new_name.empty?
+  inventory[index].name = new_id unless new_id.empty?
+  inventory[index].name = new_price unless new_price.empty?
+  inventory[index].name = new_amount unless new_amount.empty?
+end
