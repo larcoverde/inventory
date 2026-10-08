@@ -8,3 +8,9 @@ class Item
     @amount = amount
   end
 end
+
+inventory = []
+
+def create_item(inventory, name, id, price, amount)
+  inventory << Item.new(name, id, price, amount)
+end
