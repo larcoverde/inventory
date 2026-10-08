@@ -20,3 +20,10 @@ def list_items(inventory)
     puts item.name
   end
 end
+
+def view_item_details(inventory, index)
+  puts inventory[index - 1].name
+  puts inventory[index - 1].id
+  puts inventory[index - 1].price
+  puts inventory[index - 1].amount
+end
