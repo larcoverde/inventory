@@ -45,3 +45,27 @@ def delete_item(inventory, index)
 
   inventory.delete_at(index)
 end
+
+def display_help_msg
+  puts <<~HELP
+    Usage: ruby main.rb <option>
+
+    Options:
+      -h, --help       Display this help message
+      -v, --version    Display program version
+
+      -a, --add        <name, id, price, amount>
+                       Add item
+
+      -l, --list       List items
+
+      -d, --details    <index>
+                       Display item details
+
+      -e, --edit       <index, new_name, new_id, new_price, new_amount>
+                       Edit item
+
+      -D, --delete     <index>
+                       Delete item
+  HELP
+end
