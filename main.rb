@@ -16,8 +16,8 @@ def create_item(inventory, name, id, price, amount)
 end
 
 def list_items(inventory)
-  inventory.each do |item|
-    puts item.name
+  inventory.each do |index, item|
+    puts "#{index + 1} - #{item.name}"
   end
 end
 
