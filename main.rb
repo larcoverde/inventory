@@ -69,3 +69,10 @@ def display_help_msg
                        Delete item
   HELP
 end
+
+def display_version_msg
+  puts <<~VERSION
+    inventory - version 0.1 2026.10.08
+    by Lucas Arcoverde de Melo
+  VERSION
+end
