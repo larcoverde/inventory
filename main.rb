@@ -82,3 +82,8 @@ end
 def generate_item_id
   id = SecureRandom.uuid
 end
+
+def add_item(inventory, name, price, amount)
+  id = generate_item_id
+  create_item(inventory, name, id, price, amount)
+end
