@@ -1,3 +1,5 @@
+require 'securerandom'
+
 class Item
   attr_accessor :name, :id, :price, :amount
 
@@ -75,4 +77,8 @@ def display_version_msg
     inventory - version 0.1
     by Lucas Arcoverde de Melo
   VERSION
+end
+
+def generate_item_id
+  id = SecureRandom.uuid
 end
