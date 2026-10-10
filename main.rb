@@ -72,7 +72,7 @@ end
 
 def display_version_msg
   puts <<~VERSION
-    inventory - version 0.1 2026.10.08
+    inventory - version 0.1
     by Lucas Arcoverde de Melo
   VERSION
 end
