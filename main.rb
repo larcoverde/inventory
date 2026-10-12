@@ -13,7 +13,12 @@ end
 
 inventory = []
 
-def create_item(inventory, name, id, price, amount)
+def generate_item_id
+  SecureRandom.uuid
+end
+
+def create_item(inventory, name, price, amount)
+  id = generate_item_id
   inventory << Item.new(name, id, price, amount)
 end
 
@@ -77,13 +82,4 @@ def display_version_msg
     inventory - version 0.1
     by Lucas Arcoverde de Melo
   VERSION
-end
-
-def generate_item_id
-  id = SecureRandom.uuid
-end
-
-def add_item(inventory, name, price, amount)
-  id = generate_item_id
-  create_item(inventory, name, id, price, amount)
 end
