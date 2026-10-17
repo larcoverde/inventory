@@ -93,3 +93,11 @@ def read_data
     end
   end
 end
+
+def write_data
+  File.open("data.txt", "w") do |file|
+    inventory.each do |item|
+      file.puts(item)
+    end
+  end
+end
