@@ -83,3 +83,13 @@ def display_version_msg
     by Lucas Arcoverde de Melo
   VERSION
 end
+
+def read_data
+  i = 0
+  File.open("data.txt", "r") do |file|
+    file.each_line do |line|
+      inventory[i] = line.chomp
+      i += 1
+    end
+  end
+end
